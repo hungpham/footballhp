@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+	  <div class="panel-heading">
+	    FIFA Rank
+	  </div>
+	</div>
+  	<table class="table table-bordered table-striped">
+  		<thead>
+  			<th class="cel1">#</th>	
+  			<th class="cel2">Points</th>
+  			<th class="celteam">Team</th>	
+  			<th class="celcup">Cup</th>	
+  		</thead>
+  		<tbody>
+	  		<tr ng-repeat="team in teams">
+			  <td class="cel1">{{$index + 1}}</td>
+			  <td class="cel2">{{team.point}}</td>
+			  <td class="celteam">{{team.name}}</td>
+			  <td class="celcup">{{team.cup}}</td>
+			</tr>
+		</tbody>
+	</table>

@@ -1,0 +1,148 @@
+{
+  "event": {
+    "key": "world.2014",
+    "title": "World Cup 2014"
+  },
+  "rounds": [
+    {
+      "pos": 1,
+      "title": "Matchday 1",
+      "start_at": "2014/06/12",
+      "end_at": "2014/06/12",
+	  "games": []
+    },
+    {
+      "pos": 2,
+      "title": "Matchday 2",
+      "start_at": "2014/06/13",
+      "end_at": "2014/06/13",
+	  "games": []
+    },
+    {
+      "pos": 3,
+      "title": "Matchday 3",
+      "start_at": "2014/06/14",
+      "end_at": "2014/06/14",
+	  "games": []
+    },
+    {
+      "pos": 4,
+      "title": "Matchday 4",
+      "start_at": "2014/06/15",
+      "end_at": "2014/06/15",
+	  "games": []
+    },
+    {
+      "pos": 5,
+      "title": "Matchday 5",
+      "start_at": "2014/06/16",
+      "end_at": "2014/06/16",
+	  "games": []
+    },
+    {
+      "pos": 6,
+      "title": "Matchday 6",
+      "start_at": "2014/06/17",
+      "end_at": "2014/06/17",
+	  "games": []
+    },
+    {
+      "pos": 7,
+      "title": "Matchday 7",
+      "start_at": "2014/06/18",
+      "end_at": "2014/06/18",
+	  "games": []
+    },
+    {
+      "pos": 8,
+      "title": "Matchday 8",
+      "start_at": "2014/06/19",
+      "end_at": "2014/06/19",
+	  "games": []
+    },
+    {
+      "pos": 9,
+      "title": "Matchday 9",
+      "start_at": "2014/06/20",
+      "end_at": "2014/06/20",
+	  "games": []
+    },
+    {
+      "pos": 10,
+      "title": "Matchday 10",
+      "start_at": "2014/06/21",
+      "end_at": "2014/06/21",
+	  "games": []
+    },
+    {
+      "pos": 11,
+      "title": "Matchday 11",
+      "start_at": "2014/06/22",
+      "end_at": "2014/06/22",
+	  "games": []
+    },
+    {
+      "pos": 12,
+      "title": "Matchday 12",
+      "start_at": "2014/06/23",
+      "end_at": "2014/06/23",
+	  "games": []
+    },
+    {
+      "pos": 13,
+      "title": "Matchday 13",
+      "start_at": "2014/06/24",
+      "end_at": "2014/06/24",
+	  "games": []
+    },
+    {
+      "pos": 14,
+      "title": "Matchday 14",
+      "start_at": "2014/06/25",
+      "end_at": "2014/06/25",
+	  "games": []
+    },
+    {
+      "pos": 15,
+      "title": "Matchday 15",
+      "start_at": "2014/06/26",
+      "end_at": "2014/06/26",
+	  "games": []
+    },
+    {
+      "pos": 16,
+      "title": "Round of 16",
+      "start_at": "1912/01/01",
+      "end_at": "1912/01/01",
+	  "games": []
+    },
+    {
+      "pos": 17,
+      "title": "Quarter-finals",
+      "start_at": "1912/01/01",
+      "end_at": "1912/01/01",
+	  "games": []
+    },
+    {
+      "pos": 18,
+      "title": "Semi-finals",
+      "start_at": "1912/01/01",
+      "end_at": "1912/01/01",
+	  "games": []
+    },
+    {
+      "pos": 19,
+      "title": "Round 19  -  Match for third place",
+      "start_at": "1912/01/01",
+      "end_at": "1912/01/01",
+	  "games": []
+    },
+    {
+      "pos": 20,
+      "title": "Final",
+      "start_at": "1912/01/01",
+      "end_at": "1912/01/01",
+	  "games": []
+    }
+  ]
+}

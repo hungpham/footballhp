@@ -1,0 +1,36 @@
+<!--ul class="nav nav-tabs" id="group-nav-tabs">
+  <li ng-repeat="group in groups" ng-class="{active: $index == 0}"><a ng-click="showTab();" href="#{{group.key}}" data-toggle="tab">{{group.title}}</a></li>
+</ul-->
+<div class="row">  
+  <div ng-repeat="group in groups" class="col-md-6"  id="{{group.key}}">
+  	<div class="panel panel-default">
+	  <div class="panel-heading">
+	    {{group.title}}
+	  </div>
+	</div>
+  	<table class="table table-bordered">
+  		<thead>
+  			<th class="cel1">#</th>	
+  			<th class="celteam">Team</th>	
+  			<th class="cel2">Points</th>	
+  			<th class="cel2">GF - GA</th>
+  			<th class="cel2">Play</th>	
+  			<th class="cel2">Win</th>	
+  			<th class="cel2">Draw</th>	
+  			<th class="cel2">Lost</th>	
+  		</thead>
+  		<tbody>
+	  		<tr ng-repeat="team in group.teams">
+			  <td class="cel1">{{$index + 1}}</td>
+			  <td class="celteam"><img class="flag" src="img/flag/{{team.key}}.png" alt="{{team.title}}"  /> {{team.title}}</td>
+			  <td class="cel2">0</td>
+			  <td class="cel2">0</td>
+			  <td class="cel2">0</td>
+			  <td class="cel2">0</td>
+			  <td class="cel2">0</td>
+			  <td class="cel2">0</td>
+			</tr>
+		</tbody>
+	</table>
+  </div>
+</div>

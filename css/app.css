@@ -1,0 +1,20 @@
+/* app css stylesheet */
+
+body {
+  padding-top: 20px;
+}
+
+
+h1 {
+  border-bottom: 1px solid gray;
+}
+.flag {border:1px solid #ddd; height: 16px;}
+.cel1 {width: 20px; text-align: right;}
+.cel2 {width: 70px; text-align: center;}
+.celteam, .cel1, .cel2 { white-space: nowrap;}
+
+.scorecel1 {width: 5%; }
+.scorecel-stadium {width: 10%; }
+.scorecel2 {width: 40%; text-align: right;}
+.scorecel4 {width: 40%; text-align: left;}
+.scorecel3 { width: 5%; text-align: center; }

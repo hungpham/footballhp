@@ -1,0 +1,284 @@
+<div class="detail-page">
+  <div class="clearfix">    
+    <div class="phone-images">
+      <img ng-src="{{img}}"
+           class="phone"
+           ng-repeat="img in phone.images"
+           ng-class="{active: mainImageUrl==img}">
+    </div>
+    <div class="phone-text">
+      <h1 class="name">{{phone.name}}</h1>
+
+      <p class="desc">{{phone.description}}</p>
+
+      <ul class="phone-thumbs">
+        <li ng-repeat="img in phone.images">
+          <img ng-src="{{img}}" ng-click="setImage(img)">
+        </li>
+      </ul> 
+    
+    </div>
+  </div>
+
+ <table class="specs">       
+    <tr class="title">
+      <td colspan="2" class="col-md-6 parent">        
+        {{ 'detail_availability_networks' | translate}}
+      </td>         
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_availability' | translate}}
+      </td>
+      <td class="col-md-6 value">
+        <span ng-repeat="availability in phone.availability">
+          {{availability}}
+        </span>          
+      </td>
+    </tr>
+    <tr class="title">
+      <td colspan="2" class="col-md-6 parent">
+        {{ 'detail_battery' | translate}}
+      </td>         
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_type' | translate}}
+      </td>
+       <td class="col-md-6 value">
+          {{phone.battery.type}}
+      </td>
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_talk_time' | translate}}
+      </td>
+      <td class="col-md-6 value">                       
+          {{phone1.battery.talkTime}}            
+      </td>
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+          {{ 'detail_standby_time' | translate}}
+      </td>
+      <td class="col-md-6 value">                       
+         {{phone.battery.standbyTime}} 
+      </td>
+    </tr>
+    <tr class="title">
+      <td colspan="2" class="col-md-6 parent">
+         {{ 'detail_storage_memory' | translate}}
+      </td>         
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+           {{ 'detail_ram' | translate}}
+      </td>
+      <td class="col-md-6 value">                       
+         {{phone.storage.ram}}
+      </td>
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+           {{ 'detail_internal_storage' | translate}}
+      </td>
+      <td class="col-md-6 value">                       
+         {{phone.storage.flash}}
+      </td>
+    </tr>
+    <tr class="title">
+      <td colspan="2" class="col-md-6 parent">
+         {{ 'detail_connectivity' | translate}}
+      </td>         
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+          {{ 'detail_network_support' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+          {{phone.connectivity.cell}}
+      </td>
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+         {{ 'detail_wifi' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+          {{phone.connectivity.wifi}}
+      </td>
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+          {{ 'detail_bluetooth' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+          {{phone.connectivity.bluetooth}}
+      </td>
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+          {{ 'detail_infrared' | translate}}
+      </td>
+      <td class="col-md-6 value" style="color: {{checkMarkColor(phone.connectivity.infrared)}}">   
+           {{phone.connectivity.infrared | checkmark}}
+      </td>
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+          {{ 'detail_gps' | translate}}
+      </td>
+      <td class="col-md-6 value" style="color: {{checkMarkColor(phone.connectivity.gps)}}">   
+           {{phone.connectivity.gps | checkmark}}
+      </td>
+    </tr>
+    <tr class="title">
+      <td colspan="2" class="col-md-6 parent">
+         {{ 'detail_android' | translate}}
+      </td>         
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_os_version' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+        {{phone.android.os}}
+      </td>
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_ui' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+         {{phone.android.ui}}
+      </td>
+    </tr>
+    <tr class="title">
+      <td colspan="2" class="col-md-6 parent">
+         {{ 'detail_size_weight' | translate}}
+      </td>         
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_dimensions' | translate}}
+      </td>
+      <td class="col-md-6 value">            
+        <span ng-repeat="dim in phone.sizeAndWeight.dimensions">
+            {{dim}},
+          </span>      
+      </td>
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_weight' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+         {{phone.sizeAndWeight.weight}}
+      </td>
+    </tr>
+    <tr class="title">
+      <td colspan="2" class="col-md-6 parent">
+         {{ 'detail_display' | translate}}
+      </td>         
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_screen_size' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+          {{phone.display.screenSize}}
+      </td>
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_screen_resolution' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+          {{phone.display.screenResolution}}
+      </td>
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_touch_screen' | translate}}
+      </td>
+      <td class="col-md-6 value" style="color: {{checkMarkColor(phone.display.touchScreen)}}" >   
+          {{phone.display.touchScreen | checkmark}}
+      </td>
+    </tr>
+    <tr class="title">
+      <td colspan="2" class="col-md-6 parent">
+         {{ 'detail_hardware' | translate}}
+      </td>         
+    </tr>
+    <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_cpu' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+          {{phone.hardware.cpu}}
+      </td>
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_usb' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+          {{phone.hardware.usb}}
+      </td>
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_audio_headphone_jack' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+          {{phone.hardware.audioJack}}
+      </td>
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_fm_radio' | translate}}
+      </td>
+      <td class="col-md-6 value"  style="color: {{checkMarkColor(phone.hardware.fmRadio)}}" >   
+          {{phone.hardware.fmRadio | checkmark}}
+      </td>
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_accelerometer' | translate}}
+      </td>
+      <td class="col-md-6 value"  style="color: {{checkMarkColor(phone.hardware.accelerometer)}}" >   
+          {{phone.hardware.accelerometer | checkmark}}
+      </td>
+    </tr>
+    <tr class="title">
+      <td colspan="2" class="col-md-6 parent">
+         {{ 'detail_camera' | translate}}
+      </td>         
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_primary' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+          {{phone.camera.primary}}
+      </td>
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_features' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+          {{phone.camera.features.join(', ')}}
+      </td>
+    </tr>
+     <tr>       
+      <td class="col-md-6 sub">
+        {{ 'detail_additional_features' | translate}}
+      </td>
+      <td class="col-md-6 value">   
+          {{phone.additionalFeatures}}
+      </td>
+    </tr>    
+  </table>
+  <a href="#/phones" class="btn btn-primary btn-lg" role="button">{{'back_to_list_button' | translate}}</a>
+  <!--a href="javascript:void(0);" class="btn btn-primary btn-lg" role="button">{{'add_to_compare_button' | translate}}</a-->
+</div>

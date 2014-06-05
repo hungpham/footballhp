@@ -1,0 +1,26 @@
+<div class="row" ng-repeat="round in rounds">   
+  <div class="panel panel-info">
+    <div class="panel-heading">
+       <h3 class="panel-title">
+        {{round.title}} - {{round.start_at}}
+       </h3>      
+    </div>
+  </div>
+  <table class="table  table-striped">        
+      <tbody>
+        <tr ng-repeat="game in round.games">
+        <td class="scorecel1">{{game.time}}</td>
+        
+        <td class="scorecel2">{{game.team1_title}} <img class="flag" src="img/flag/{{game.team1_key}}.png" alt="{{game.team1_title}}"  /> </td>
+
+        <td class="scorecel3 success">{{game.score1 | score}} - {{game.score2 | score}} </td>
+
+        <td class="scorecel4"> <img class="flag" src="img/flag/{{game.team2_key}}.png" alt="{{game.team1_title}}"  /> {{game.team2_title}}</td>
+
+        <td class="scorecel-stadium">{{game.stadium}}</td>
+
+        <td class="scorecel5"><a href="javascript:void(0);" ng-click="matchDetail('{{game.team1_key}}', '{{game.team2_key}}');">info</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

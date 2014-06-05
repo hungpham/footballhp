@@ -1,0 +1,216 @@
+{
+  "event": {
+    "key": "world.2014",
+    "title": "World Cup 2014"
+  },
+  "groups": [
+    {
+      "key": "group_a",
+      "title": "Group A",
+      "teams": [
+        {
+          "key": "bra",
+          "title": "Brazil",
+          "code": "BRA"
+        },
+        {
+          "key": "cro",
+          "title": "Croatia",
+          "code": "CRO"
+        },
+        {
+          "key": "mex",
+          "title": "Mexico",
+          "code": "MEX"
+        },
+        {
+          "key": "cmr",
+          "title": "Cameroon",
+          "code": "CMR"
+        }
+      ]
+    },
+    {
+      "key": "group_b",
+      "title": "Group B",
+      "teams": [
+        {
+          "key": "esp",
+          "title": "Spain",
+          "code": "ESP"
+        },
+        {
+          "key": "ned",
+          "title": "Netherlands",
+          "code": "NED"
+        },
+        {
+          "key": "chi",
+          "title": "Chile",
+          "code": "CHI"
+        },
+        {
+          "key": "aus",
+          "title": "Australia",
+          "code": "AUS"
+        }
+      ]
+    },
+    {
+      "key": "group_c",
+      "title": "Group C",
+      "teams": [
+        {
+          "key": "col",
+          "title": "Colombia",
+          "code": "COL"
+        },
+        {
+          "key": "gre",
+          "title": "Greece",
+          "code": "GRE"
+        },
+        {
+          "key": "civ",
+          "title": "C\u00f4te d'Ivoire",
+          "code": "CIV"
+        },
+        {
+          "key": "jpn",
+          "title": "Japan",
+          "code": "JPN"
+        }
+      ]
+    },
+    {
+      "key": "group_d",
+      "title": "Group D",
+      "teams": [
+        {
+          "key": "uru",
+          "title": "Uruguay",
+          "code": "URU"
+        },
+        {
+          "key": "crc",
+          "title": "Costa Rica",
+          "code": "CRC"
+        },
+        {
+          "key": "eng",
+          "title": "England",
+          "code": "ENG"
+        },
+        {
+          "key": "ita",
+          "title": "Italy",
+          "code": "ITA"
+        }
+      ]
+    },
+    {
+      "key": "group_e",
+      "title": "Group E",
+      "teams": [
+        {
+          "key": "sui",
+          "title": "Switzerland",
+          "code": "SUI"
+        },
+        {
+          "key": "ecu",
+          "title": "Ecuador",
+          "code": "ECU"
+        },
+        {
+          "key": "fra",
+          "title": "France",
+          "code": "FRA"
+        },
+        {
+          "key": "hon",
+          "title": "Honduras",
+          "code": "HON"
+        }
+      ]
+    },
+    {
+      "key": "group_f",
+      "title": "Group F",
+      "teams": [
+        {
+          "key": "arg",
+          "title": "Argentina",
+          "code": "ARG"
+        },
+        {
+          "key": "bih",
+          "title": "Bosnia-Herzegovina",
+          "code": "BIH"
+        },
+        {
+          "key": "irn",
+          "title": "Iran",
+          "code": "IRN"
+        },
+        {
+          "key": "nga",
+          "title": "Nigeria",
+          "code": "NGA"
+        }
+      ]
+    },
+    {
+      "key": "group_g",
+      "title": "Group G",
+      "teams": [
+        {
+          "key": "ger",
+          "title": "Germany",
+          "code": "GER"
+        },
+        {
+          "key": "por",
+          "title": "Portugal",
+          "code": "POR"
+        },
+        {
+          "key": "gha",
+          "title": "Ghana",
+          "code": "GHA"
+        },
+        {
+          "key": "usa",
+          "title": "United States",
+          "code": "USA"
+        }
+      ]
+    },
+    {
+      "key": "group_h",
+      "title": "Group H",
+      "teams": [
+        {
+          "key": "bel",
+          "title": "Belgium",
+          "code": "BEL"
+        },
+        {
+          "key": "alg",
+          "title": "Algeria",
+          "code": "ALG"
+        },
+        {
+          "key": "rus",
+          "title": "Russia",
+          "code": "RUS"
+        },
+        {
+          "key": "kor",
+          "title": "South Korea",
+          "code": "KOR"
+        }
+      ]
+    }
+  ]
+}
